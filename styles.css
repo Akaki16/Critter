@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background: rgb(196, 199, 187);
+    letter-spacing: 1.2px;
+    font-family: sans-serif;
+}
+
+header {
+    background: rgb(0, 128, 96);
+    text-align: center;
+    padding: 15px;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+#creets {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#creets .card {
+    padding: 15px;
+    width: 600px;
+    height: auto;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 4px;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+#creets .card:hover {
+    background: rgb(236, 235, 235);
+    transform: scale(1.1);
+}
+
+#creets .card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#creets .card .card-top {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#creets .card .card-top h3, h4 {
+    position: relative;
+    top: 20px;
+    margin: 10px;
+}
+
+#creets .card .card-body {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+#creets .card .card-body article p {
+    color: #333;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 1.5rem;
+}
+
+#creets .card .card-footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 15px;
+}
+
+#creets .card .card-footer h4 {
+    color: gray;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.username {
+    color: #333;
+}
+
+.created {
+    color: gray;
+    font-weight: normal;
+}
+
+@media (max-width: 636px) {
+    #creets .card {
+        width: 95%;
+    }
+
+    #creets .card:hover {
+        transform: scale(1.0);
+    }
+}
